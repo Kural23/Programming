@@ -1,0 +1,13 @@
+class Solution {
+    public int lengthOfLastWord(String s) {
+        String a=s.trim();
+        int count=0,l=a.length();
+        int index=a.lastIndexOf(" ",l);
+        for(int i=index+1;i<l;i++)
+        {
+            count++;
+        } 
+        return count;
+    }
+   
+}
